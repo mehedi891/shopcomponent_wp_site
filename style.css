@@ -17,6 +17,21 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 /* seach form style */
 
 
+/* Smooth scroll everywhere */
+html { scroll-behavior: smooth;  }
+
+/* Keep anchors visible below your fixed header */
+[id] { scroll-margin-top: 80px; }         /* header height (desktop) */
+@media (max-width: 860px){
+  [id] { scroll-margin-top: 64px; }       /* header height (mobile) */
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce){
+  html { scroll-behavior: auto; }
+}
+
+
 /* Same rules but scoped to #fluentform_2 */
 .footerSubscribe #fluentform_2 fieldset {
   border: none !important;
