@@ -330,3 +330,8 @@ html { scroll-behavior: smooth;  }
   display: none;
 }
 }
+
+.prehero{
+  text-align: center;
+  line-height: 1.6;
+}

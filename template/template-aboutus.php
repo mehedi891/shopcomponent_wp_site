@@ -131,7 +131,7 @@
   </section>
 
   <!-- Team -->
-  <section class="team">
+  <!-- <section class="team">
     <div class="container">
       <h2 class="sectionTitle">Team</h2>
       <ul class="teamGrid">
@@ -165,7 +165,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
 
   <!-- FAQ -->
   <section class="faq">
@@ -196,7 +196,7 @@
           <h3 class="contactTitle">Want to partner or have questions?</h3>
           <p class="contactSub">We’d love to hear from you—whether you’re a merchant, creator, or agency.</p>
         </div>
-        <a class="button" href="#contact">Get in touch</a>
+        <a class="button" href="/contact">Get in touch</a>
       </div>
     </div>
   </section>

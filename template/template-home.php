@@ -6,13 +6,7 @@
 
 
     <main class="main" role="main">
-      <!-- Pre-hero -->
-      <section class="prehero">
-        <div class="container">
-          <h2 class="preheroHead">Bring your products to where your audience already is</h2>
-          <p class="preheroSub">Create a component → Copy &amp; embed it on any site → Sell where people scroll. Turn any page into a storefront.</p>
-        </div>
-      </section>
+      
 
       <!-- Hero -->
       <section class="hero">
@@ -92,6 +86,14 @@
             <li>✅ Higher order values</li>
             <li>✅ Expanded reach without extra stores</li>
           </ul>
+        </div>
+      </section>
+
+      <!-- Pre-hero -->
+      <section class="prehero">
+        <div class="container">
+          <h2 class="preheroHead">Bring your products to where your audience already is</h2>
+          <p class="preheroSub">Create a component → Copy &amp; embed it on any site → Sell where people scroll. Turn any page into a storefront.</p>
         </div>
       </section>
 

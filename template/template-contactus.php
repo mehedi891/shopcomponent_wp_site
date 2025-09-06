@@ -34,8 +34,8 @@
             <h3>Support</h3>
             <p class="muted">Get help with setup, embeds, and integrations.</p>
             <ul class="contactList">
-              <li><a href="mailto:support@shopcomponent.com">support@shopcomponent.com</a></li>
-              <li>Docs: <a href="#">Help Center</a></li>
+              <!-- <li><a href="mailto:support@shopcomponent.com">support@shopcomponent.com</a></li> -->
+              <li>Docs: <a href="/academy">Help Center</a></li>
             </ul>
           </article>
 
@@ -43,7 +43,7 @@
             <h3>Sales & partnerships</h3>
             <p class="muted">Agencies, creators, and volume plans.</p>
             <ul class="contactList">
-              <li><a href="mailto:partners@shopcomponent.com">partners@shopcomponent.com</a></li>
+              <!-- <li><a href="mailto:partners@shopcomponent.com">partners@shopcomponent.com</a></li> -->
               <li><a href="#">Partner program</a></li>
             </ul>
           </article>
@@ -52,8 +52,8 @@
             <h3>Billing</h3>
             <p class="muted">Invoices, refunds, and plan changes.</p>
             <ul class="contactList">
-              <li><a href="mailto:billing@shopcomponent.com">billing@shopcomponent.com</a></li>
-              <li><a href="#">Pricing</a></li>
+              <!-- <li><a href="mailto:billing@shopcomponent.com">billing@shopcomponent.com</a></li> -->
+              <li><a href="/pricing">Pricing</a></li>
             </ul>
           </article>
         </aside>
@@ -74,7 +74,7 @@
           <li class="officeCard">
             <h4>Dhaka</h4>
             <p class="muted">Mon–Fri, 9:00–18:00 BST</p>
-            <address>Level 4, Example Tower<br>Gulshan, Dhaka</address>
+            <!-- <address>Level 4, Example Tower<br>Gulshan, Dhaka</address> -->
           </li>
           <li class="officeCard">
             <h4>Remote</h4>
