@@ -1858,7 +1858,7 @@ img{
 
 
 /* Pricing layout */
-.pricingHeader { padding: 10px 0 6px; }
+.pricingHeader { padding: 30px 0 40px; line-height: 1.6;}
 .pricingHeader .backLink { display:inline-block; color: var(--muted); text-decoration:none; margin-bottom:8px; }
 .pricingHeader .backLink:hover { text-decoration: underline; }
 .pricingHeader .heading { margin:4px 0 6px; text-align:center; }
