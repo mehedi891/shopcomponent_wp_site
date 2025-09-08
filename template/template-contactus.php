@@ -35,7 +35,7 @@
             <p class="muted">Get help with setup, embeds, and integrations.</p>
             <ul class="contactList">
               <!-- <li><a href="mailto:support@shopcomponent.com">support@shopcomponent.com</a></li> -->
-              <li>Docs: <a href="/academy">Help Center</a></li>
+              <li>Docs: <a href="/academy/">Help Center</a></li>
             </ul>
           </article>
 
@@ -53,7 +53,7 @@
             <p class="muted">Invoices, refunds, and plan changes.</p>
             <ul class="contactList">
               <!-- <li><a href="mailto:billing@shopcomponent.com">billing@shopcomponent.com</a></li> -->
-              <li><a href="/pricing">Pricing</a></li>
+              <li><a href="/pricing/">Pricing</a></li>
             </ul>
           </article>
         </aside>
