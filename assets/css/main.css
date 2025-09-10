@@ -1969,6 +1969,146 @@ img{
 :root[data-theme="light"] .btnSolid:hover { background: rgba(0,0,0,.1); }
 
 
+
+/* ---- ShopComponent Demo Library Styles (sc-*) ---- */
+  .sc-demo-library {
+    /* map to your global theme tokens with sensible fallbacks */
+    --sc-bg:     var(--bg, #0b0d12);
+    --sc-surface:var(--card, #11141b);
+    --sc-card:   var(--card, #151923);
+    --sc-text:   var(--fg, #e9edf3);
+    --sc-muted:  var(--muted, #a8b0bd);
+    --sc-accent: var(--brand, #66e0a3);
+    --sc-accent-2: var(--brand-2, #7ab7ff);
+    --sc-border: var(--border, #232a36);
+    --sc-radius: var(--radius, 16px);
+    --sc-gap:    1.25rem;
+    --sc-shadow: var(--shadow, 0 6px 24px rgba(0,0,0,.35));
+    --sc-ring:   color-mix(in srgb, var(--sc-accent) 35%, transparent);
+
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--sc-bg) 90%, #000 10%),
+      var(--sc-bg) 30%,
+      color-mix(in srgb, var(--sc-bg) 90%, #000 10%)
+    );
+    color: var(--sc-text);
+    padding: clamp(2.5rem, 4vw, 4rem) 1rem;
+  }
+
+  .sc-container { max-width: 1120px; margin: 0 auto; }
+  .sc-header { text-align: center; margin-bottom: clamp(1.75rem, 2.5vw, 2.25rem); }
+
+  .sc-eyebrow {
+    display: inline-block;
+    font-size: .85rem; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--sc-accent);
+    background: color-mix(in srgb, var(--sc-accent) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--sc-accent) 25%, transparent);
+    padding: .35rem .6rem; border-radius: 999px; margin-bottom: .75rem;
+  }
+  .sc-title { font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.15; margin: 0 0 .5rem; }
+  .sc-subtitle { color: var(--sc-muted); max-width: 740px; margin: 0 auto; font-size: 1rem; }
+  .sc-disclaimer { margin-top: .85rem; font-size: .9rem; color: var(--sc-muted); opacity: .9; }
+
+  .sc-grid {
+    margin-top: clamp(1.5rem, 3vw, 2rem);
+    display: grid; grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: var(--sc-gap);
+  }
+  @media (min-width: 720px){ .sc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1040px){ .sc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+  .sc-card {
+    background: linear-gradient(180deg, var(--sc-card), color-mix(in srgb, var(--sc-card) 85%, #000 15%));
+    border: 1px solid var(--sc-border);
+    border-radius: var(--sc-radius);
+    overflow: hidden;
+    box-shadow: var(--sc-shadow);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    position: relative; isolation: isolate;
+  }
+  .sc-card:focus-within, .sc-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,.45); border-color: color-mix(in srgb, var(--sc-border) 70%, var(--sc-accent-2) 30%); }
+
+  .sc-thumb-wrap {
+    position: relative; aspect-ratio: 16/9; overflow: hidden;
+    background: color-mix(in srgb, var(--sc-bg) 80%, #000 20%);
+    border-bottom: 1px solid var(--sc-border);
+  }
+  .sc-thumb { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.05) contrast(1.05); transform: scale(1.02); transition: transform .35s ease; }
+  .sc-card:hover .sc-thumb { transform: scale(1.06); }
+
+  .sc-badge {
+    position: absolute; top: .75rem; left: .75rem;
+    background: color-mix(in srgb, #000 50%, transparent);
+    backdrop-filter: blur(6px);
+    color: #fff; padding: .35rem .55rem; border-radius: 10px; font-size: .8rem;
+    border: 1px solid rgba(255,255,255,.14);
+  }
+
+  .sc-body { padding: 1rem .9rem 1.1rem; display: grid; gap: .65rem; }
+  .sc-kicker { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--sc-accent-2); opacity: .95; }
+  .sc-card-title { font-size: 1.05rem; margin: 0; line-height: 1.25; }
+  .sc-desc { color: var(--sc-muted); font-size: .95rem; line-height: 1.5; }
+
+  .sc-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .1rem; }
+  .sc-tag {
+    font-size: .78rem; color: var(--sc-muted);
+    border: 1px dashed color-mix(in srgb, var(--sc-border) 80%, #2a3242 20%);
+    padding: .2rem .5rem; border-radius: 999px;
+    background: color-mix(in srgb, #fff 2%, transparent);
+  }
+
+  .sc-card-actions { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: .25rem; }
+  .sc-btn {
+    appearance: none; border: none; outline: none; border-radius: 10px;
+    padding: .6rem .8rem; font-weight: 600; font-size: .92rem; cursor: pointer;
+    text-decoration: none; transition: transform .2s, box-shadow .2s, background .2s, border-color .2s;
+    display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap;
+  }
+  .sc-btn-primary {
+    background: linear-gradient(180deg, var(--sc-accent), color-mix(in srgb, var(--sc-accent) 80%, #4fd392 20%));
+    color: #0a0d12; box-shadow: 0 6px 14px var(--sc-ring);
+  }
+  .sc-btn-primary:hover { transform: translateY(-1px); }
+  .sc-btn-outline { background: transparent; color: var(--sc-text); border: 1px solid var(--sc-border); }
+
+  .sc-foot { text-align: center; margin-top: clamp(1.75rem, 3vw, 2.25rem); display: grid; gap: .9rem; }
+  .sc-steps { display: grid; gap: .5rem; color: var(--sc-muted); font-size: .95rem; }
+  .sc-cta { display: inline-flex; gap: .6rem; align-items: center; justify-content: center; }
+
+  /* -------- Light theme overrides -------- */
+  :root[data-theme="light"] .sc-demo-library{
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg, #f6f8fb) 85%, #fff 15%),
+      var(--bg, #f6f8fb) 30%,
+      color-mix(in srgb, var(--bg, #f6f8fb) 85%, #fff 15%)
+    );
+    color: var(--fg, #0b0f14);
+  }
+  :root[data-theme="light"] .sc-card{
+    background: linear-gradient(180deg, var(--card, #ffffff), color-mix(in srgb, var(--card, #ffffff) 92%, #fff 8%));
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+  :root[data-theme="light"] .sc-thumb-wrap{ background: color-mix(in srgb, var(--bg, #f6f8fb) 92%, #000 8%); border-bottom-color: var(--border); }
+  :root[data-theme="light"] .sc-badge{
+    background: color-mix(in srgb, #000 35%, transparent);
+    border-color: rgba(0,0,0,.05);
+  }
+  :root[data-theme="light"] .sc-tag{
+    background: rgba(0,0,0,.03);
+    border-color: var(--border);
+    color: var(--muted);
+  }
+  :root[data-theme="light"] .sc-btn-outline{
+    background: rgba(0,0,0,.02);
+    border-color: var(--border);
+    color: var(--fg);
+  }
+  :root[data-theme="light"] .sc-btn-outline:hover{ background: rgba(0,0,0,.05); }
+
 /* =========================================================
    LIGHT THEME POLISH (icons, shadows, backgrounds, borders)
    ========================================================= */
